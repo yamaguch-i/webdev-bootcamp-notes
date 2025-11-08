@@ -4,16 +4,31 @@ const prices = [980, 1500, 1980, 4980, 2980];
 // for (let price of prices) {
 //     total += price;
 // }
-// console.log(total); // 12420
+// console.log(total);
 
-prices.reduce((total, price) => total * price)
+prices.reduce((total, price) => total + price)
 
 const minPrice = prices.reduce((min, price) => {
-    if (min > price) {
+    if(min > price) {
         return price;
     }
     return min;
 })
+
+// let total = 0;
+// for (let price of prices) {
+//     total += price;
+// }
+// console.log(total); // 12420
+
+// prices.reduce((total, price) => total * price)
+
+// const minPrice = prices.reduce((min, price) => {
+//     if (min > price) {
+//         return price;
+//     }
+//     return min;
+// })
 
 const movies = [
     {
@@ -63,6 +78,18 @@ const movies = [
     }
 ]
 
+// const highestMovie = movies.reduce((bestMovie, currMovie) => {
+//     if (bestMovie.score < currMovie.score) {
+//         return currMovie;
+//     }
+//     return bestMovie;
+// })
+
+
+const evens = [2, 4, 6, 8];
+
+// const sum = evens.reduce((sum, num) => sum + num, 50);
+
 const highestMovie = movies.reduce((bestMovie, currMovie) => {
     if (bestMovie.score < currMovie.score) {
         return currMovie;
@@ -70,7 +97,4 @@ const highestMovie = movies.reduce((bestMovie, currMovie) => {
     return bestMovie;
 })
 
-
-const evens = [2, 4, 6, 8];
-
-const sum = evens.reduce((sum, num) => sum + num, 50);
+const sum = evens.reduce((sum, num) => sum + num, 100);
