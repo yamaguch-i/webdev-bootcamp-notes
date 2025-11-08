@@ -1,8 +1,8 @@
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
-numbers.filter((num) => {
-    return num < 10;
-})
+// numbers.filter((num) => {
+//     return num < 10;
+// })
 
 const movies = [
     {
@@ -52,13 +52,33 @@ const movies = [
     }
 ];
 
-// const goodMovies = movies.filter(movie => movie.score > 80);
-const goodMovieTitles = movies
+// // const goodMovies = movies.filter(movie => movie.score > 80);
+// const goodMovieTitles = movies
+//     .filter(movie => movie.score > 80)
+//     .map(movie => movie.title);
+
+
+
+// const badMovies = movies.filter(movie => movie.score < 70);
+
+// const recentMovies = movies.filter(movie => movie.year > 2010);
+
+numbers.filter((num) => {
+    return num < 10;
+})
+
+const goodMovies = movies
     .filter(movie => movie.score > 80)
     .map(movie => movie.title);
-
-
 
 const badMovies = movies.filter(movie => movie.score < 70);
 
 const recentMovies = movies.filter(movie => movie.year > 2010);
+
+const names = ['tanaka', 'suzuki1979', 'q29832128238983', 'hogemoge', 'kimetsu'];
+
+function validUserNames(names) {
+    return names.filter(name => {
+        return name.length < 10;
+    });
+}

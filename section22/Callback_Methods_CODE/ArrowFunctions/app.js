@@ -6,15 +6,15 @@
 //     return x + y;
 // }
 
-const square = num => {
-    return num * num;
-}
+// const square = num => {
+//     return num * num;
+// }
 
-const rollDie = () => (
-    Math.floor(Math.random() * 6) + 1
-)
+// const rollDie = () => (
+//     Math.floor(Math.random() * 6) + 1
+// )
 
-const add = (x, y) => x + y;
+// const add = (x, y) => x + y;
 
 const movies = [
     {
@@ -35,10 +35,44 @@ const movies = [
     }
 ];
 
-// const newMovies = movies.map(function (movie) {
+// // const newMovies = movies.map(function (movie) {
+// //     return `${movie.title} - ${movie.score / 10}`;
+// // })
+
+// const newMovies = movies.map(movie => 
+//     `${movie.title} - ${movie.score / 10}`
+// )
+
+// const add = (x, y) => {
+//     return x + y;
+// }
+
+// const square = num => {
+//     return num * num;
+// }
+
+// const rollDie = () => (
+//     Math.floor(Math.random() * 6) + 1
+// );
+
+// const add = (x, y) => x + y
+
+// const newMovies = movies.map(function(movie) {
 //     return `${movie.title} - ${movie.score / 10}`;
 // })
 
-const newMovies = movies.map(movie => 
-    `${movie.title} - ${movie.score / 10}`
-)
+// const newMovies = movies.map(movie => 
+//     `${movie.title} - ${movie.score / 10}`
+// )
+
+// console.log('やっふぉー');
+// setTimeout(() => {
+//     console.log('おーい');
+// }, 3000);
+
+// console.log('ばいばい');
+
+const id = setInterval(() => {
+    console.log(Math.random());
+}, 2000);
+

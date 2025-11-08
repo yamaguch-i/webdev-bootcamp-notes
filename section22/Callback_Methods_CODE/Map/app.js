@@ -25,6 +25,14 @@ const movies = [
     }
 ];
 
+// const titles = movies.map(function(movie) {
+//     return movie.title;
+// });
+
+// const doubles = numbers.map(function(num) {
+//      return num * 2;
+// })
+
 const titles = movies.map(function(movie) {
     return movie.title;
 });

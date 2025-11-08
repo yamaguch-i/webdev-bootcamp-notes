@@ -1,6 +1,7 @@
 const exams = [80, 98, 92, 78, 77, 90, 89, 84, 81, 77]
 
-exams.every(exam => exam >= 75)
+exams.every(exam => exam >= 75);
+// exams.every(exam => exam >= 75)
 
 const movies = [
     {
@@ -50,4 +51,5 @@ const movies = [
     }
 ]
 
+// movies.some(movie => movie.year > 2010);
 movies.some(movie => movie.year > 2010);
